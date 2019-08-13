@@ -23,4 +23,8 @@ class Dog
     DB[:conn].execute("DROP TABLE IF EXISTS dogs;")
   end
 
+  def save
+    self
+  end
+
 end
