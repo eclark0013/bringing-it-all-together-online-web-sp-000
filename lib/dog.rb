@@ -69,10 +69,10 @@ class Dog
   def self.find_by_name(name)
     sql = <<-SQL
       SELECT * FROM dogs
-      WHERE id = ?
+      WHERE name = ?
     SQL
 
-    row = DB[:conn].execute(sql, id).first
+    row = DB[:conn].execute(sql, name).first
     self.new_from_db(row)
   end
 
