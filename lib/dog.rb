@@ -74,7 +74,7 @@ class Dog
 
     row = DB[:conn].execute(sql, name).first
     dog = self.find_or_create_by(name:name, breed:row[2])
-    binding.pry
+    #binding.pry
   end
 
 
