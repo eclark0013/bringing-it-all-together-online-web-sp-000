@@ -60,6 +60,7 @@ class Dog
         self.new_from_db(row)
       else
         row[2] = breed
+        self.new_from_db(row)
       end
     else
       self.create(name:name, breed:breed)
