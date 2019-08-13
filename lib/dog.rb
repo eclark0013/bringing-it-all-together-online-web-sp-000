@@ -76,5 +76,9 @@ class Dog
     dog = self.find_or_create_by(name:name, breed:row[2])
   end
 
+  def update
+
+  end
+
 
 end
