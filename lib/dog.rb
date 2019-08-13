@@ -58,6 +58,8 @@ class Dog
     if !row.empty?
       if row[2] == breed
         self.new_from_db(row)
+      else
+        
       end
     else
       self.create(name:name, breed:breed)
