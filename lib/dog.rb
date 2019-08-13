@@ -6,4 +6,7 @@ class Dog
     self.breed = breed
     self.id = id
   end
+
+  def self.create_table
+  end
 end
